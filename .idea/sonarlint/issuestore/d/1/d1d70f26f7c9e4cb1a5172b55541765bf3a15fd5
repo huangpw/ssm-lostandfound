@@ -1,0 +1,20 @@
+
+`	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(èÝÎÑþÿÿÿÿ
+{
+java:S2293X"YReplace the type specification in this constructor call with the diamond operator ("<>").(Éó÷Ìýÿÿÿÿ8Ê½¸Ô”2
+v
+java:S2293Y"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹ÌÙª8Ë½¸Ô”2
+_
+java:S2583@"DChange this condition so that it does not always evaluate to "false"(§ÀÏŸûÿÿÿÿ
+_
+java:S2583C"DChange this condition so that it does not always evaluate to "false"(·»Ò×þÿÿÿÿ
+e
+java:S4488#"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(£Ü¹žÿÿÿÿÿ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(¶ƒÞ 
+l
+java:S4488U"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ï„›Þøÿÿÿÿ8é½¸Ô”2
+]	java:S125\"<This block of commented-out lines of code should be removed.(ú€Ÿ›ùÿÿÿÿ8é½¸Ô”2
+U	java:S106i"9Replace this use of System.out or System.err by a logger.(ê‚òÕ8ê½¸Ô”2
+Z	java:S106j"9Replace this use of System.out or System.err by a logger.(…ßœ¥þÿÿÿÿ8ë½¸Ô”2
+Z	java:S106l"9Replace this use of System.out or System.err by a logger.(ž”¾¸øÿÿÿÿ8ë½¸Ô”2
+X	java:S125m"<This block of commented-out lines of code should be removed.(›˜ÈÅ8ë½¸Ô”2
