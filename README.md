@@ -22,7 +22,7 @@
 
 **开发环境：** windows10、JDK1.8以上、MySQL5.7及以上、Tomcat7.0及以上、Maven
 
-**前端框架： **Layui
+**前端框架：** Layui
 
 **后台框架：** SSM+自动生成generate
 
@@ -30,7 +30,7 @@
 
 **开发作者：** 源码客栈-逍遥游
 
-**自学作者：**huangpw
+**自学作者：** huangpw
 
 系统角色：
 
