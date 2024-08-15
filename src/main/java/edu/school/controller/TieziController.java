@@ -1,6 +1,7 @@
 package edu.school.controller;
 
 import com.github.pagehelper.PageInfo;
+import edu.school.entity.Admin;
 import edu.school.entity.Tiezi;
 import edu.school.entity.User;
 import edu.school.service.TieziService;
@@ -53,7 +54,11 @@ public class TieziController {
             modelMap.addAttribute("url", "tiezi");
             return "/client/tiezi_list";
         }
-        return "/tiezi/list";
+        Admin admin = (Admin) session.getAttribute("admin");
+        if(admin != null) {
+            return "/tiezi/list";
+        }
+        return "redirect:/toLogin";
     }
 
     // 新增公告
@@ -132,16 +137,16 @@ public class TieziController {
     }
 
     // 根据id查询
-    @RequestMapping(value = "/tiezi/detail")
-    public String queryDetail(Integer id, Model model) {
-        Tiezi record = service.findById(id);
-        if (record != null) {
-            model.addAttribute("record", record);
-        }
-        return "tiezi/detail";
-    }
+    //@RequestMapping(value = "/tiezi/detail")
+    //public String queryDetail(Integer id, Model model) {
+    //    Tiezi record = service.findById(id);
+    //    if (record != null) {
+    //        model.addAttribute("record", record);
+    //    }
+    //    return "tiezi/detail";
+    //}
     // 前台详情页
-    @RequestMapping(value = "/tiezi/detail2")
+    @RequestMapping(value = "/tiezi/detail")
     public String queryDetail2(Integer id, Model model) {
         Tiezi record = service.findById(id);
         if (record != null) {

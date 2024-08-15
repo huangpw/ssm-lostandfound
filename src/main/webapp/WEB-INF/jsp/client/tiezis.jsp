@@ -24,11 +24,11 @@
                     <%--    <a href="" id="newest">最新发表</a>--%>
                     <%--</div>--%>
                     <div class="tl_tab fl">
-                        <a href="" id="hot_week" class="active"返回首页</a>
+                        <a href="" id="hot_week" class="active">返回首页</a>
                     </div>
                     <div class="search fr">
-                        <form action="<%=path%>/board/list" method="post" id="searchForm">
-                            <input type="text" name="title" id="title" value="" placeholder="请输入公告标题" class="input_tp"/>
+                        <form action="<%=path%>/tiezi/list" method="post" id="searchForm">
+                            <input type="text" name="title" id="title" value="" placeholder="请输入标题" class="input_tp"/>
                             <input type="hidden" name="pageNum" id="pageNum">
                             <input type="hidden" name="pageSize" id="pageSize" value="${pageInfo.pageSize }">
                             <button type="button" class="btn">搜索</button>
@@ -43,7 +43,7 @@
                                     <a href="tDetail.html#reply" class="reply">10回复</a>
                                     <div class="t_con">
                                         <h3>
-                                            <a href="<%=path%>/board/detail2?id=${row.id}">${ row.title }</a>
+                                            <a href="<%=path%>/tiezi/detail?id=${row.id}">${ row.title }</a>
                                             <span class="addressor">发布者：XXXXX&nbsp;&nbsp;&nbsp;发布日期：<fmt:formatDate value="${row.create_time}" pattern="yyyy-MM-dd HH:mm:ss"/>&nbsp;&nbsp;&nbsp;</span>
                                         </h3>
                                             <%--<p>话题内容话题内容话题内容话题内容话，题内容话题内容话题内容话题内容，话题内容话题内容话题内容话题内容话题，内容话题内容话题内容话题内容话题内容话。题内容话题内容话题内容话题内容话题内容...</p>--%>
@@ -182,7 +182,6 @@
     }
 </script>
 <script>
-
 
     function doPage(pageNo) {
         document.getElementById("pageNum").value = pageNo;

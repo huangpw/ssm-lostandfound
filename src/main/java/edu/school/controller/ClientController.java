@@ -3,9 +3,11 @@ package edu.school.controller;
 import com.github.pagehelper.PageInfo;
 import edu.school.entity.Board;
 import edu.school.entity.Goods;
+import edu.school.entity.Tiezi;
 import edu.school.entity.User;
 import edu.school.service.BoardService;
 import edu.school.service.GoodsService;
+import edu.school.service.TieziService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,6 +32,9 @@ public class ClientController {
 
     @Autowired
     BoardService boardService;
+
+    @Autowired
+    TieziService tieziService;
 
     @RequestMapping("/client/main")
     public String toHome(Model model, HttpSession session){
@@ -67,5 +72,19 @@ public class ClientController {
         modelMap.addAttribute("record",record);
 
         return "/client/boards";
+    }
+
+    // 校园论坛
+    @RequestMapping(value = "/client/tiezi",method = {RequestMethod.GET,RequestMethod.POST})
+    public String tieziPageList(Tiezi record,
+                                @RequestParam(value = "pageNum",defaultValue = "1")Integer pageNum,
+                                @RequestParam(value = "pageSize",defaultValue = "5")Integer pageSize,
+                                ModelMap modelMap){
+
+        PageInfo<Tiezi> pageInfo = tieziService.getPageList(pageNum,pageSize,record);
+        modelMap.addAttribute("pageInfo",pageInfo);
+        modelMap.addAttribute("record",record);
+
+        return "/client/tiezis";
     }
 }

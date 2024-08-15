@@ -14,7 +14,7 @@
 <div class="inside_wrap">
     <div class="inside_con">
         <div class="adr">
-            <a href="index.html">首页</a>&nbsp;>&nbsp;<a href="<%=path%>/client/boards">公告列表</a>&nbsp;>&nbsp;公告详情
+            <a href="index.html">首页</a>&nbsp;>&nbsp;<a href="<%=path%>/client/tiezi">校园论坛</a>&nbsp;>&nbsp;帖子详情
         </div>
         <div class="inside_box">
             <div class="topic_wrap fl">
@@ -24,7 +24,7 @@
                     <%--    <a href="javascript:void(0);" id="newest">最新发表</a>--%>
                     <%--</div>--%>
                         <div class="tl_tab fl">
-                            <a href="<%=path%>/client/boards" id="hot_week" class="active">返回列表</a>
+                            <a href="<%=path%>/client/tiezi" id="hot_week" class="active">返回列表</a>
                         </div>
                     <div class="search fr">
                         <input type="text" name="topic" id="topic" value="" placeholder="请输入话题名称" class="input_tp" />

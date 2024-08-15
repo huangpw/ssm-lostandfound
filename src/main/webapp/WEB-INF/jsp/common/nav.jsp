@@ -50,7 +50,7 @@
                 <%--</ul>--%>
             </li>
             <li class="nLi">
-                <h3><a href="topic.html">校园论坛</a></h3>
+                <h3><a href="<%=path%>/client/tiezi">校园论坛</a></h3>
             </li>
             <li class="nLi">
                 <h3><a href="<%=path%>/client/boards">公告列表</a></h3>
