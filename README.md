@@ -1,6 +1,6 @@
 # SSM框架项目实战-快速开发校园失物招领系统
 
-**视频地址：**https://www.bilibili.com/video/BV1t44y1f7zK/?vd_source=536bbd11950db7cbf64ebd982db0e30f
+**视频地址：** https://www.bilibili.com/video/BV1t44y1f7zK/?vd_source=536bbd11950db7cbf64ebd982db0e30f
 
 > 看视频，照着敲代码，也是没谁了......
 >
@@ -16,17 +16,17 @@
 ​				链接：https://pan.baidu.com/s/1VTUUEJMVhimJOgimjHykQw?pwd=9454 
 ​				提取码：9454 
 
-**项目名称：**基于SSM的校园失物招领系统（lostandfound)
+**项目名称：** 基于SSM的校园失物招领系统（lostandfound)
 
-**项目包名：**edu.school
+**项目包名：** edu.school
 
-**开发环境：**windows10、JDK1.8以上、MySQL5.7及以上、Tomcat7.0及以上、Maven
+**开发环境：** windows10、JDK1.8以上、MySQL5.7及以上、Tomcat7.0及以上、Maven
 
-**前端框架：**Layui
+**前端框架： **Layui
 
-**后台框架：**SSM+自动生成generate
+**后台框架：** SSM+自动生成generate
 
-**开发工具：**IDEA、Navicat
+**开发工具：** IDEA、Navicat
 
 **开发作者：** 源码客栈-逍遥游
 
